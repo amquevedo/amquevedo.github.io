@@ -5,30 +5,169 @@
     <meta name="date" content='2022-06-12'>
     <title>CS 16 - Summer Session C, 2022</title>
   </head>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
   <body>
     <p>Date: June 12, 2022</p>
 <h1 id="syllabus">Syllabus</h1>
-<p style="font-family:verdana"></p>>Fundamental building blocks for solving problems using computers.
+<p>Fundamental building blocks for solving problems using computers.
 Topics include basic computer organization and programming constructs:
 memory, CPU, binary arithmetic, variables, expressions, statements,
 conditionals, iteration, functions, parameters, recursion, primitive and
 composite data types, and basic operating system and debugging
 tools.</p>
-<p style="font-family:verdana"></p>>C++ is the programming language used in this course.</p>
-<p style="font-family:verdana"></p>><strong>Instructor:</strong> Alejandro Quevedo</p>
-<p style="font-family:verdana"></p>><strong>Teaching Assistants:</strong> TBD</p>
-<p style="font-family:verdana"></p>><strong>ULA:</strong> TBD</p>
+<p>C++ is the programming language used in this course.</p>
+<p><strong>Instructor:</strong> Alejandro Quevedo</p>
+<p><strong>Teaching Assistants:</strong> TBD</p>
+<p><strong>ULA:</strong> TBD</p>
 <h2 id="lectures">Lectures</h2>
-<p style="font-family:verdana"></p>><strong>When:</strong> Tuesdays, Wednesdays, and Thursdays from
+<p><strong>When:</strong> Tuesdays, Wednesdays, and Thursdays from
 2:00pm - 3:20pm</p>
-<p style="font-family:verdana"></p>><strong>Where:</strong> Harold Frank Hall, Room 1104</p>
+<p><strong>Where:</strong> Harold Frank Hall, Room 1104</p>
 <h2 id="lab-sections">Lab Sections</h2>
-<p style="font-family:verdana"></p>>Labs will be held in <strong>Phelps Hall, Room 3525</strong> starting
+<p>Labs will be held in <strong>Phelps Hall, Room 3525</strong> starting
 the second week of the course.</p>
-<p style="font-family:verdana"></p>><strong>Lab Section 1:</strong> Wednesday, 4:00pm - 4:50pm</p>
-<p style="font-family:verdana"></p>><strong>Lab Section 2:</strong> Wednesday, 5:00pm - 5:50pm</p>
-<p style="font-family:verdana"></p>><strong>Lab Section 3:</strong> Wednesday, 6:00pm - 6:50pm</p>
-<p style="font-family:verdana"></p>>Lab sections will be live and synchronous, but will
+<p><strong>Lab Section 1:</strong> Wednesday, 4:00pm - 4:50pm</p>
+<p><strong>Lab Section 2:</strong> Wednesday, 5:00pm - 5:50pm</p>
+<p><strong>Lab Section 3:</strong> Wednesday, 6:00pm - 6:50pm</p>
+<p>Lab sections will be live and synchronous, but will
 <strong>not</strong> be recorded. Attendance will not be taken but
 attendance is highly encouraged for your benefit. Please only attend the
 lab section you are registered for.</p>
@@ -70,7 +209,7 @@ lab section you are registered for.</p>
 </tbody>
 </table>
 <h2 id="online-textbook">Online Textbook</h2>
-<p style="font-family:verdana"></p>>Homework, reading assignments, and labs (at least initially) will be
+<p>Homework, reading assignments, and labs (at least initially) will be
 administered via the online <strong>Zybook</strong>. To join the
 textbook, follow the instructions below: 1. Sign in or create an account
 at learn.zybooks.com 2. Enter zyBook code: UCSBCMPSC16QuevedoSummer2022
@@ -83,21 +222,21 @@ submitting lab assignments to Gradescope and/or Github. More to</li>
 </ul>
 <h2 id="graded-components">Graded Components</h2>
 <ol type="1">
-<li><p style="font-family:verdana"></p>><strong>Reading:</strong> Between each class, you’ll have reading
+<li><p><strong>Reading:</strong> Between each class, you’ll have reading
 to do in the textbook. There is too much information you need to learn
 in this course for you to get all of it in lecture, so the readings are
 essential. The reading assignments for the next class can be found in
 the lecture notes for that class.</p></li>
-<li><p style="font-family:verdana"></p>><strong>Homework:</strong> Homeworks will be posted on the course
+<li><p><strong>Homework:</strong> Homeworks will be posted on the course
 website each week. These will be synergistic with the reading. As you
 complete reading assignments in the Zybook, the homework problems
 (consisting of Practice and Challenge Activities in the Zybook reading)
 can be completed simultaneously. Specific PAs and CAs will be assigned
 on the course website each week.</p></li>
-<li><p style="font-family:verdana"></p>><strong>Quizzes:</strong> Quizzes will be administered at the end
+<li><p><strong>Quizzes:</strong> Quizzes will be administered at the end
 of each week. Exact dates and times of quizzes is TBD (at the
 present).</p></li>
-<li><p style="font-family:verdana"></p>><strong>Programming Assignments / Labs:</strong> Programming
+<li><p><strong>Programming Assignments / Labs:</strong> Programming
 assignments (also called labs) are given once a week, and are typically
 started in Lab Sections on Wednesdays. You may work on them during
 closed labs and plan to finish the assignment on your own time outside
@@ -107,7 +246,7 @@ assumption is that you at the very least read the assignment before your
 lab section. You are encouraged to use pair programming in most of the
 labs but please read the collaboration policy for each lab. Some labs
 have to be completed individually.</p></li>
-<li><p style="font-family:verdana"></p>><strong>Final Exam / Final Project:</strong> TBD</p></li>
+<li><p><strong>Final Exam / Final Project:</strong> TBD</p></li>
 </ol>
 <h2 id="grading-breakdown">Grading Breakdown</h2>
 <table>
@@ -201,7 +340,7 @@ grading scale may be altered in the students’ favor if this will better
 reflect the students’ mastery of the material. Thus, if there is a
 “curve”, it will be applied at the end, <strong>NOT</strong> to
 individual assignments.</p>
-<p style="font-family:verdana"></p>><strong>A+ Grades:</strong> These may be awarded to the very best
+<p><strong>A+ Grades:</strong> These may be awarded to the very best
 performing students in the class—but the cutoff for A+ grades will be
 determined at the end of the course at the discretion of the instructor
 (there is no pre-determined cutoff—an average of 97 or more doesn’t

@@ -1,2 +1,3 @@
 # amqevedo.github.io
-Course Materials for CS 16, Summer Session C 2022
+
+General GitHub Repository for Alejandro Quevedo
